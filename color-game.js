@@ -15,4 +15,13 @@ colorDisplay.textContent = pickedColor;
 
 for (var ix = 0; ix < grids.length; ix++) {
   grids[ix].style.backgroundColor = colors[ix];
-};
+
+  grids[ix].addEventListener("click", function () {
+    var clickedColor = this.style.backgroundColor;
+    if (clickedColor === pickedColor) {
+      alert("correct");
+    } else {
+      alert("wrong");
+    }
+  });
+}
