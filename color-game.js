@@ -8,6 +8,10 @@ var colors = [
 ];
 
 var grids = document.querySelectorAll(".grid");
+var pickedColor = colors[3];
+var colorDisplay = document.getElementById("color-display");
+
+colorDisplay.textContent = pickedColor;
 
 for (var ix = 0; ix < grids.length; ix++) {
   grids[ix].style.backgroundColor = colors[ix];
