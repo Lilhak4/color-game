@@ -11,6 +11,10 @@ body {
   background-color: #232323;
 }
 
+#header-container {
+  display: flex;
+}
+
 .grid {
   width: 30%;
   background-color: purple;
@@ -26,8 +30,22 @@ body {
 
 h1 {
   color: white;
+  padding: 10vh;
+  text-align: center;
+  width: 100%;
 }
 
 span {
   color: white;
+
+}
+
+#stripe {
+  background-color: white;
+  height: 30px;
+  text-align: center;
+}
+
+#message {
+  color: black;
 }
