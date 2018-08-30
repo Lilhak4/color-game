@@ -52,6 +52,7 @@ button {
   font-size: inherit;
   -webkit-transition: background 0.25s;
   -moz-transition: background 0.25s;
+  outline: none;
 }
 
 button:hover {
