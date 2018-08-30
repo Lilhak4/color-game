@@ -11,6 +11,16 @@ var hardBtn = document.querySelector("#hardBtn");
 easyBtn.addEventListener("click", function () {
   hardBtn.classList.remove("selected")
   easyBtn.classList.add("selected");
+  colors = generateRandomColors(3);
+  pickedColor = pickColor();
+  colorDisplay.textContent = pickColor();
+  for (var ix = 0; ix < grids.length; ix++) {
+    if (colors[ix]) {
+      grids[ix].style.background = colors[ix];
+    } else {
+      grids[ix].style.display = "none";
+    }
+  }
 })
 
 hardBtn.addEventListener("click", function () {
