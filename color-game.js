@@ -8,7 +8,7 @@ var colors = [
 ];
 
 var grids = document.querySelectorAll(".grid");
-var pickedColor = colors[3];
+var pickedColor = pickColor();
 var colorDisplay = document.getElementById("color-display");
 var messageDisplay = document.querySelector("#message");
 
@@ -20,10 +20,22 @@ for (var ix = 0; ix < grids.length; ix++) {
   grids[ix].addEventListener("click", function () {
     var clickedColor = this.style.backgroundColor;
     if (clickedColor === pickedColor) {
-      messageDisplay.textContent = "Correct"
+      messageDisplay.textContent = "Correct";
+      changeColors(clickedColor);
     } else {
       this.style.background = "#232323"
       messageDisplay.textContent = "Try Again"
     }
   });
+}
+
+function changeColors(color) {
+  for (var ix = 0; ix < grids.length; ix++) {
+    grids[ix].style.background = color;
+  }
+}
+
+function pickColor() {
+  var random = Math.floor(Math.random() * colors.length);
+  return colors[random];
 }
