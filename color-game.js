@@ -21,7 +21,7 @@ for (var ix = 0; ix < grids.length; ix++) {
     if (clickedColor === pickedColor) {
       alert("correct");
     } else {
-      alert("wrong");
+      this.style.background = "#232323"
     }
   });
 }
