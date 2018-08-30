@@ -24,11 +24,14 @@ body {
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+  border-radius: 7.5%;
+  -webkit-transition: background 0.65s;
+  -moz-transition: background 0.65s;
 }
 
 #container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 #stripe {
@@ -47,6 +50,8 @@ button {
   color: steelblue;
   letter-spacing: 1px;
   font-size: inherit;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
 }
 
 button:hover {
@@ -82,5 +87,6 @@ span {
 }
 
 .selected {
-  background: blue;
+  color: white;
+  background: steelblue;
 }
