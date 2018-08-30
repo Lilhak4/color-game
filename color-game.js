@@ -1,3 +1,4 @@
+'use strict'
 var numSquares = 6;
 var colors = generateRandomColors(numSquares);
 var grids = document.querySelectorAll(".grid");
@@ -45,8 +46,8 @@ resetButton.addEventListener("click", function () {
   for (var ix = 0; ix < grids.length; ix++) {
     grids[ix].style.background = colors[ix];
   }
-  h1.style.background = "#232323"
-});
+  h1.style.background = "steelblue";
+})
 
 colorDisplay.textContent = pickedColor;
 
